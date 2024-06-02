@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: $default-font-size;
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: $font-normal;
+    font-size: $text-regular;
+    line-height: $default-line-height;
+    background-color: $color-black;
+    color: $color-white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}

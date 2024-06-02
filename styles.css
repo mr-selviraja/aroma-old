@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Overpass", "Trebuchet MS", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  background-color: #1e1a17;
+  color: #f1f2f6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.font-normal {
+  font-family: "Overpass", "Trebuchet MS", sans-serif;
+}

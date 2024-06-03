@@ -27,3 +27,11 @@ ul {
 a {
     text-decoration: none;
 }
+
+.section {
+    padding: calc(5rem + 5vw) 0 !important;
+    
+    &--heading {
+        margin-bottom: 5rem;
+    }
+}

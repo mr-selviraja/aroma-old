@@ -28,13 +28,33 @@ a {
   text-decoration: none;
 }
 
+.section {
+  padding: calc(5rem + 5vw) 0 !important;
+}
+.section--heading {
+  margin-bottom: 5rem;
+}
+
 .container {
   width: 120rem;
   margin: 0 auto;
+  padding: 0 5vw;
 }
 
 .d-none {
   display: none;
+}
+
+.color-primary {
+  color: #FF751F;
+}
+
+.color-light {
+  color: #c9d1da;
+}
+
+.color-white {
+  color: #f1f2f6;
 }
 
 .mb-sm {
@@ -61,12 +81,20 @@ a {
   text-transform: uppercase;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .fw-300 {
   font-weight: 300;
 }
 
 .text-primary {
   font-size: 5rem;
+}
+
+.text-secondary {
+  font-size: 3rem;
 }
 
 .text-tertiary {
@@ -93,11 +121,11 @@ a {
   background: #ff8539;
 }
 .btn--secondary {
-  background: #854D27;
-  color: #ced6e0;
+  background: #6b3d1e;
+  color: #c9d1da;
 }
 .btn--secondary:hover {
-  background: #99582d;
+  background: #7f4824;
 }
 
 .header {
@@ -121,9 +149,63 @@ a {
   align-items: center;
 }
 .header__hero {
-  height: 70%;
+  height: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.header__hero--title {
+  word-spacing: 0.5rem;
+}
+
+.about__content {
+  display: flex;
+  gap: 5rem;
+}
+.about__content--gallery {
+  position: relative;
+  width: 50%;
+}
+.about__content--gallery:hover img {
+  filter: blur(0.2rem);
+  transform: scale(0.9);
+}
+.about__content--gallery img {
+  width: 22.5rem;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+}
+.about__content--gallery img:hover {
+  filter: blur(0);
+  border: 0.5rem solid #6b3d1e;
+  z-index: 2;
+  padding: 1.5rem;
+  transform: scale(1.5);
+}
+.about__content--gallery--img-1 {
+  top: 0;
+  left: 5rem;
+}
+.about__content--gallery--img-2 {
+  top: 14rem;
+  left: 15rem;
+}
+.about__content--gallery--img-3 {
+  top: 5rem;
+  right: 1rem;
+}
+.about__content--desc {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.about__content--desc div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.about__content--desc button {
+  align-self: flex-start;
 }

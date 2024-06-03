@@ -13,7 +13,7 @@
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="./styles.css" />
 </head>
-<body class="font-normal">
+<body class="font-normal color-light">
     <header class="header">
         <div class="container">
             <nav class="header__nav">
@@ -37,8 +37,8 @@
         <!-- End of Container -->
 
         <section class="header__hero">
-            <h2 class="text-primary font-accent">Welcome to Aroma</h2>
-            <p class="text-tertiary fw-300 mb-md">Where every meal is a Masterpiece</p>
+            <h2 class="text-primary font-accent header__hero--title color-white">Welcome to Aroma</h2>
+            <p class="text-tertiary fw-300 mb-md header__hero--subtitle">Where every meal is a Masterpiece</p>
 
             <div class="btn--group">
                 <button class="btn btn--lg btn--primary">
@@ -54,10 +54,47 @@
     </header>
     <!-- End of Header -->
 
-    <main class="main">
-        <section class="about">
-            <div class="about__gallery">About Gallery</div>
-            <div class="about__content">About Content</div>
+    <main class="main container">
+        <section class="about section">
+            <h2 class="section--heading text-uppercase text-center color-primary text-secondary" id="about-section">About</h2>
+
+            <div class="about__content">
+                <div class="about__content--gallery">
+                    <img src="./assets/waiter-image.png" alt="chef" class="about__content--gallery--img-1" />
+
+                    <img src="./assets/ambience-image.png" alt="server" class="about__content--gallery--img-2" />
+
+                    <img src="./assets/chef-image.png" alt="ambience" class="about__content--gallery--img-3" />
+                </div>
+                
+                <div class="about__content--desc">
+                    <p>
+                        Founded in 2024, Aroma began as a dream to create a restaurant that offers more than just a meal, but a journey
+                         through flavors and aromas. From our humble beginnings, we’ve grown into a beloved local gem.
+                    </p>
+
+                    <div>
+                        <h3 class="text-tertiary color-white">Unforgettable Dining Experience</h3>
+
+                        <p>
+                            At Aroma, we create a mesmerizing ambience with elegant decor and soothing music, ensuring an unforgettable
+                            dining experience that delights all your senses.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-tertiary color-white">Passionate Culinary Experts</h3>
+
+                        <p>
+                            Our talented chefs and attentive servers are dedicated to providing exceptional service and exquisite dishes.
+                        </p>
+                    </div>
+
+                    <button class="btn btn--primary">
+                        Order Now
+                    </button>
+                </div>
+            </div>
         </section>
         <!-- End of About -->
 

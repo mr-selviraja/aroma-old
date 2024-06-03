@@ -1,0 +1,64 @@
+.about {
+    &__content {
+        display: flex;
+        gap: 5rem;
+
+        &--gallery {
+            position: relative;
+
+            width: 50%;
+
+            &:hover img {
+                filter: blur(.2rem);
+                transform: scale(0.9);
+            }
+            
+            & img {
+                width: 22.5rem;
+                transition: all .3s ease-in-out;
+                position: absolute;
+
+                &:hover {
+                    filter: blur(0);
+                    border: .5rem solid $color-secondary;
+                    z-index: 2;
+                    padding: 1.5rem;
+                    transform: scale(1.5);
+                }
+            }
+
+            &--img-1 {
+                top: 0;
+                left: 5rem;
+            }
+
+            &--img-2 {
+                top: 14rem;
+                left: 15rem;
+            }
+
+            &--img-3 {
+                top: 5rem;
+                right: 1rem;
+            }
+        }
+
+        &--desc {
+            width: 50%;
+
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+
+            & div {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            & button {
+                align-self: flex-start;
+            }
+        }
+    }
+}

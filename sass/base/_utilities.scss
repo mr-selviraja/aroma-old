@@ -1,10 +1,24 @@
 .container {
     width: 120rem;
     margin: 0 auto;
+    padding: 0 5vw;
 }
 
 .d-none {
     display: none;
+}
+
+// Color utilities
+.color-primary {
+    color: $color-primary;
+}
+
+.color-light {
+    color: $color-light;
+}
+
+.color-white {
+    color: $color-white;
 }
 
 // Margin utilities
@@ -34,6 +48,10 @@
     text-transform: uppercase;
 }
 
+.text-center {
+    text-align: center;
+}
+
 // Font Weight utilities
 .fw-300 {
     font-weight: 300;
@@ -42,6 +60,10 @@
 // Text Size utilities
 .text-primary { 
     font-size: 5rem;
+}
+
+.text-secondary { 
+    font-size: 3rem;
 }
 
 .text-tertiary {

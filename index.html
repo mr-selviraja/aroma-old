@@ -8,34 +8,47 @@
     <!-- Google Fonts CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="./styles.css" />
 </head>
 <body class="font-normal">
     <header class="header">
-        <nav class="header__nav">
-            <ul class="header__nav--menu">
-                <li class="header__nav--link">About</li>
-                <li class="header__nav--link">Menu</li>
-                <li class="header__nav--link">Reviews</li>
-                <li class="header__nav--link">Contact</li>
-            </ul>
+        <div class="container">
+            <nav class="header__nav">
+                <a href="#" class="header__nav--logo">
+                    <h1 class="d-none">
+                        Aroma
+                    </h1>
+                    <img src="./assets/aroma-text-logo.svg" alt="Aroma logo" />
+                </a>
 
-            <a href="#" class="header__nav--logo">
-                <img src="./assets/aroma-logo.svg" alt="Aroma logo" />
-            </a>
+                <ul class="header__nav--menu text-uppercase">
+                    <li class="header__nav--link">About</li>
+                    <li class="header__nav--link">Menu</li>
+                    <li class="header__nav--link">Reviews</li>
+                    <li class="header__nav--link">Contact</li>
+                    <button class="btn btn--md btn--primary text-uppercase">Login</button>
+                </ul>
+            </nav>
+            <!-- End of Nav -->
+        </div>
+        <!-- End of Container -->
 
-            <div class="header__nav--actions">
-                <input type="search" placeholder="Search for an item..." />
-                <button class="btn btn--md">Login</button>
+        <section class="header__hero">
+            <h2 class="text-primary font-accent">Welcome to Aroma</h2>
+            <p class="text-tertiary fw-300 mb-md">Where every meal is a Masterpiece</p>
+
+            <div class="btn--group">
+                <button class="btn btn--lg btn--primary">
+                    Order Now
+                </button>
+
+                <button class="btn btn--lg btn--secondary">
+                    View Menu
+                </button>
             </div>
-        </nav>
-        <!-- End of Nav -->
-
-        <section class="hero">
-
         </section>
         <!-- End of Hero -->
     </header>
@@ -43,30 +56,40 @@
 
     <main class="main">
         <section class="about">
-
+            <div class="about__gallery">About Gallery</div>
+            <div class="about__content">About Content</div>
         </section>
         <!-- End of About -->
 
         <section class="menu">
-
+            <div class="about__card">About Card 1</div>
+            <div class="about__card">About Card 2</div>
+            <div class="about__card">About Card 3</div>
         </section>
         <!-- End of Menu -->
 
         <section class="reviews">
-
+            Reviews
         </section>
         <!-- End of Reviews -->
 
         <section class="contact">
-
+            <div class="contact__content">
+                Contact Content
+            </div>
+            <form action="" class="contact__form">
+                Contact Form
+            </form>
         </section>
         <!-- End of Contact -->
     </main>
     <!-- End of Main -->
 
     <footer class="footer">
-
+        Footer
     </footer>
     <!-- End of Footer -->
+
+    <script src="./script.js"></script>
 </body>
 </html>

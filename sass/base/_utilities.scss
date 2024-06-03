@@ -1,3 +1,49 @@
+.container {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.d-none {
+    display: none;
+}
+
+// Margin utilities
+.mb-sm {
+    margin-bottom: 1rem;
+}
+
+.mb-md {
+    margin-bottom: 2.5rem;
+}
+
+.mb-lg {
+    margin-bottom: 5rem;
+}
+
+// Font utilities
 .font-normal {
     font-family: $font-normal;
+}
+
+.font-accent {
+    font-family: $font-accent;
+}
+
+// Text utilities
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+// Font Weight utilities
+.fw-300 {
+    font-weight: 300;
+}
+
+// Text Size utilities
+.text-primary { 
+    font-size: 5rem;
+}
+
+.text-tertiary {
+    font-size: 1.9rem;
 }

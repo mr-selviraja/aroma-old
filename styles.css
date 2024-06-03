@@ -13,10 +13,10 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Overpass", "Trebuchet MS", sans-serif;
-  font-size: 1.4rem;
+  font-family: "Josefin Sans", "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
   line-height: 1.6;
-  background-color: #1e1a17;
+  background-color: #1b1815;
   color: #f1f2f6;
 }
 
@@ -28,6 +28,102 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+.d-none {
+  display: none;
+}
+
+.mb-sm {
+  margin-bottom: 1rem;
+}
+
+.mb-md {
+  margin-bottom: 2.5rem;
+}
+
+.mb-lg {
+  margin-bottom: 5rem;
+}
+
 .font-normal {
-  font-family: "Overpass", "Trebuchet MS", sans-serif;
+  font-family: "Josefin Sans", "Trebuchet MS", sans-serif;
+}
+
+.font-accent {
+  font-family: "Great Vibes", cursive;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.text-primary {
+  font-size: 5rem;
+}
+
+.text-tertiary {
+  font-size: 1.9rem;
+}
+
+.btn {
+  border: none;
+  padding: 1rem 2.5rem;
+  font-family: inherit;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn--group {
+  display: flex;
+  gap: 2.5rem;
+}
+.btn--primary {
+  background: #FF751F;
+  color: #1b1815;
+}
+.btn--primary:hover {
+  background: #ff8539;
+}
+.btn--secondary {
+  background: #854D27;
+  color: #ced6e0;
+}
+.btn--secondary:hover {
+  background: #99582d;
+}
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(27, 24, 21, 0.85), rgba(31, 27, 24, 0.85)), url("../assets/hero-image.jpg");
+  background-size: cover;
+  background-position: top;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 0;
+}
+.header__nav--logo img {
+  width: 7.5rem;
+}
+.header__nav--menu {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+.header__hero {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

@@ -25,6 +25,15 @@
     color: $color-white;
 }
 
+// Background utilities
+.bg-black {
+    background-color: $color-black;
+}
+
+.bg-dark {
+    background-color: $color-dark;
+}
+
 // Margin utilities
 .mb-sm {
     margin-bottom: 1rem;

@@ -61,6 +61,14 @@ a {
   color: #f1f2f6;
 }
 
+.bg-black {
+  background-color: #1b1815;
+}
+
+.bg-dark {
+  background-color: #1f1b18;
+}
+
 .mb-sm {
   margin-bottom: 1rem;
 }

@@ -1,0 +1,47 @@
+.menu {
+    &__cards {
+        display: flex;
+        gap: 2.5rem;
+        justify-content: center;
+    }
+
+    &__card {
+        padding: 2.5rem;
+        text-align: center;
+
+        position: relative;
+
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-2.5rem);
+        }
+
+        &--img {
+            width: 22.5rem;
+        }
+
+        &--title {
+            margin: 1rem 0;
+        }
+
+        &--items {
+            margin-bottom: 4rem; /* Pushes absoute positioned button down for enhanced spacing */ 
+
+            & > * {
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid rgba($color-grey, 10%);
+                }
+            }
+        }
+
+        &--button {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+}

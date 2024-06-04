@@ -11,6 +11,10 @@
         display: flex;
         gap: 2.5rem;
     }
+
+    &--lg {
+        padding: 1.5rem 3.75rem;
+    }
     
     &--primary {
         background: $color-primary;

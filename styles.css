@@ -125,6 +125,9 @@ a {
   display: flex;
   gap: 2.5rem;
 }
+.btn--lg {
+  padding: 1.5rem 3.75rem;
+}
 .btn--primary {
   background: #FF751F;
   color: #1b1815;
@@ -220,4 +223,40 @@ a {
 }
 .about__content--desc button {
   align-self: flex-start;
+}
+
+.menu__cards {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+}
+.menu__card {
+  padding: 2.5rem;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.menu__card:hover {
+  transform: translateY(-2.5rem);
+}
+.menu__card--img {
+  width: 22.5rem;
+}
+.menu__card--title {
+  margin: 1rem 0;
+}
+.menu__card--items {
+  margin-bottom: 4rem; /* Pushes absoute positioned button down for enhanced spacing */
+}
+.menu__card--items > * {
+  padding: 1rem;
+}
+.menu__card--items > *:not(:last-child) {
+  border-bottom: 1px solid rgba(87, 96, 111, 0.1);
+}
+.menu__card--button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }

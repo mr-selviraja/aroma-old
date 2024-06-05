@@ -184,13 +184,45 @@
         </section>  
         <!-- End of Menu -->
 
-        <section class="exclusives">
-            <span>Tab 1</span>
-
-            <span>Tab 2</span>
-
-            <span>Tab 3</span>
-        </section>
+        <section class="exclusives section">
+            <h2 class="section--heading text-uppercase text-center color-primary text-secondary" id="exclusives-section">Exclusives</h2>
+        
+            <div class="exclusives__tabs-container">
+                <button class="btn exclusives__tab exclusives__tab--active" data-tab="0">
+                    <span class="exclusives__tab--active-text">
+                        Tab 1
+                    </span>
+                </button>
+        
+                <button class="btn exclusives__tab" data-tab="1">
+                    <span>
+                        Tab 2
+                    </span>
+                </button>
+        
+                <button class="btn exclusives__tab" data-tab="2">
+                    <span>
+                        Tab 3
+                    </span>
+                </button>
+            </div>
+            <!-- End of Exclusives-tabs-container -->
+        
+            <div class="container">
+                <article class="exclusives__tab--content" data-content="0">
+                    Exclusives Tab Content 1
+                </article>
+        
+                <article class="exclusives__tab--content d-none" data-content="1">
+                    Exclusives Tab Content 2
+                </article>
+        
+                <article class="exclusives__tab--content d-none" data-content="2">
+                    Exclusives Tab Content 3
+                </article>
+            </div>
+            <!-- End of Container -->
+        </section>        
         <!-- End of Exclusives -->
 
         <section class="reviews">
@@ -215,6 +247,6 @@
     </footer>
     <!-- End of Footer -->
 
-    <script src="./script.js"></script>
+    <script defer src="./script.js"></script>
 </body>
 </html>

@@ -3,6 +3,8 @@
     padding: 1rem 2.5rem;
     font-family: inherit;
 
+    transition: all .3s ease-in-out;
+
     &:hover {
         cursor: pointer;
     }
@@ -31,6 +33,15 @@
 
         &:hover {
             background: lighten($color-secondary, 5%);
+        }
+    }
+
+    &--grey {
+        background: $color-grey;
+        color: $color-light;
+
+        &:hover {
+            background: lighten($color-grey, 5%);
         }
     }
 }

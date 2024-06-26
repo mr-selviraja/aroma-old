@@ -30,3 +30,32 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+/**
+ * Reviews slider code
+ */
+const btnSlidePrev = document.querySelector(".reviews__slider--prev-btn");
+const btnSlideNext = document.querySelector(".reviews__slider--next-btn");
+const slidesList = document.querySelectorAll(".reviews__slider--slide");
+
+let currSlide = 0;
+
+slidesList.forEach((slide, index) => slide.style.transform = `translateX(${index*100}%)`);
+
+btnSlideNext.addEventListener("click", () => {
+    if(currSlide == slidesList.length-1) currSlide = 0;
+    else currSlide++;
+
+    slidesList.forEach((slide, index) => {
+        slide.style.transform = `translateX(${(index - currSlide) * 150}%)`;
+    });
+});
+
+btnSlidePrev.addEventListener("click", () => {
+    if(currSlide == 0) currSlide = slidesList.length-1;
+    else currSlide--;
+
+    slidesList.forEach((slide, index) => {
+        slide.style.transform = `translateX(${(index - currSlide) * 150}%)`;
+    });
+});

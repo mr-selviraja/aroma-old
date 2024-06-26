@@ -29,6 +29,10 @@
     color: $color-white;
 }
 
+.color-grey {
+    color: $color-grey;
+}
+
 // Background utilities
 .bg-black {
     background-color: $color-black;
@@ -85,4 +89,8 @@
 
 .text-tertiary {
     font-size: 1.9rem;
+}
+
+.text-small {
+    font-size: 1.2rem;
 }

@@ -1,0 +1,74 @@
+.reviews {
+    &__slider {
+        position: relative;
+        height: 30rem;
+
+        overflow-x: hidden;
+
+        &--slide {
+            transition: all .5s ease-in;
+
+            position: absolute;
+            top: 0;
+            height: 30rem;
+
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &--title {
+                margin-bottom: 1rem;
+                text-shadow: 0 0 .15rem;
+            }
+
+            &--description {
+                margin-bottom: 2.5rem;
+                max-width: 50rem;
+                text-align: center;
+            }
+
+            &--person {
+                &--img {
+                    width: 10rem;
+                    border-radius: 50%;
+                }
+
+                &--name, 
+                &--location {
+                    text-shadow: 0 0 .1rem $color-grey;
+                }
+            }
+        }
+
+        &--prev-btn,
+        &--next-btn {
+            font-family: inherit;
+            background: $color-black;
+            color: $color-white;
+            padding: 2rem 2.25rem;
+            border-radius: 50%;
+            box-shadow: 0 0 .5rem rgba($color-grey, 0.4);
+            border: none; 
+
+            position: absolute;
+            top: 50%;
+
+            z-index: 10;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &--prev-btn {
+            left: 5%;
+        }
+
+        &--next-btn {
+            right: 5%;
+        }
+    }
+}
